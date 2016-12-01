@@ -18,6 +18,7 @@ A BigNum object can be instantiated in a couple of different ways:
 		* If the boolean value is true, the double's .ToString() method will be called and the BigNum's first constructor (see above) will be used. This method does **not** guarantee precision as double.ToString() itself is not precise. 
 		* Otherwise, the BigNum will be created by parsing the double's [IEEE 754 bit pattern](https://en.wikipedia.org/wiki/Double-precision_floating-point_format). Again, this method does **not** guarantee precision as the double itself is not precise.
 	* Note: The implicit assignment operation (e.g. BigNum num = 12.052) uses this second constructor with false as the second argument.
+
 ## Contributing
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
